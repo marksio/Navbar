@@ -1,2 +1,2 @@
 # cityhack_coconutcity
-A project aim to create a sustainable city 
+A project aim to create a sustainable city.

@@ -1,57 +1,57 @@
 <style>
-#nav
+    #nav
 {
     /* container */
 }
-#nav > a
-{
-    display: none;
-}
-#nav li
-{
-    position: relative;
-}
-
-/* first level */
-
-#nav > ul
-{
-    height: 3.75em;
-}
-    #nav > ul > li
+    #nav > a
     {
-        width: 25%;
-        height: 100%;
-        float: left;
+        display: none;
     }
+    #nav li
+    {
+        position: relative;
+    }
+ 
+    /* first level */
+ 
+    #nav > ul
+    {
+        height: 3.75em;
+    }
+        #nav > ul > li
+        {
+            width: 25%;
+            height: 100%;
+            float: left;
+        }
+ 
+    /* second level */
+ 
+    #nav li ul
+    {
+        display: none;
+        position: absolute;
+        top: 100%;
+    }
+        #nav li:hover ul
+        {
+            display: block;
+        }
 
-/* second level */
-
-#nav li ul
-{
-    display: none;
-    position: absolute;
-    top: 100%;
-}
-#nav li:hover ul
-{
-    display: block;
-}
-
-@media only screen and ( max-width: 40em ) /* 640 */
+        @media only screen and ( max-width: 40em ) /* 640 */
 {
     #nav
     {
         position: relative;
     }
-    #nav > a
-    {
-    }
-    #nav:not( :target ) > a:first-of-type,
-    #nav:target > a:last-of-type
-    {
-        display: block;
-    }
+        #nav > a
+        {
+        }
+        #nav:not( :target ) > a:first-of-type,
+        #nav:target > a:last-of-type
+        {
+            display: block;
+        }
  
     /* first level */
  
@@ -63,16 +63,16 @@
         left: 0;
         right: 0;
     }
-    #nav:target > ul
-    {
-        display: block;
-    }
-    #nav > ul > li
-    {
-        width: 100%;
-        float: none;
-    }
-
+        #nav:target > ul
+        {
+            display: block;
+        }
+        #nav > ul > li
+        {
+            width: 100%;
+            float: none;
+        }
+ 
     /* second level */
  
     #nav li ul
